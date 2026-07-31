@@ -67,7 +67,7 @@ namespace SignalApp
                 var existingRecord = Records.FirstOrDefault(r => r.Id == rec.Id);
                 if (existingRecord != null)
                 {
-                    var index = records.IndexOf(existingRecord);
+                    var index = Records.IndexOf(existingRecord);
                     Records[index] = Map(rec);
                 }
             });
